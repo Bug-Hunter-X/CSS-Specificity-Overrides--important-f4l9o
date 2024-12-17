@@ -1,0 +1,19 @@
+The solution involves avoiding the unnecessary use of `!important` and understanding CSS specificity.  In most cases, using a more structured CSS approach will resolve the conflict without needing `!important`.
+
+Here's the corrected version:
+
+```css
+.parent {
+  color: blue;
+}
+
+.child {
+  color: red;
+}
+
+.parent .child {
+  color: green;
+}
+```
+
+Now, the color of the `.child` element within the `.parent` element is correctly set to green without using `!important`, reflecting proper CSS specificity order.
